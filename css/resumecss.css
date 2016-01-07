@@ -45,7 +45,7 @@ body{
 background-color:rgb(110,192,204);
 }
 #Pub{
-	border-top: 5px solid black;
+	border: 5px solid black;
 	
 	padding-left: 10px;
 	min-height: 225px;
