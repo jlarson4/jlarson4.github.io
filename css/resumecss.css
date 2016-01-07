@@ -1,0 +1,54 @@
+#contactInfo{
+	background-color:rgb(112,163,210);
+}
+
+#teaching{
+	background-color: rgb(110,192,204);
+}
+
+#otherWork{
+	background-color:rgb(150,73,231);
+}
+
+#education{
+	background-color:rgb(141,114,231);
+}
+
+#heading{
+	background-color: rgb(112,163,210);
+}
+
+#dropDowns{
+	background-color:rgb(112,163,210);
+}
+
+body{
+	background-color:rgb(79,238,210);
+}
+
+#heading2{
+	background-color: rgb(110,192,204);
+}
+
+.resPub{
+background-color:rgb(110,192,204);
+}
+#Pub{
+	border-top: 5px solid black;
+	/*border-bottom: 2px solid black;*/
+	min-height: 200px;
+}
+#heading3{
+	background-color: rgb(141,114,231)
+}
+
+#heading4{
+	background-color: rgb(150,73,231)
+}
+#heading5{
+	background-color: rgb(79,158,210)
+}
+#padded{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
