@@ -1,3 +1,7 @@
+#top{
+	margin-top: 25px;
+}
+
 #contactInfo{
 	background-color:rgb(112,163,210);
 }
@@ -23,7 +27,7 @@
 }
 
 body{
-	background-color:rgb(79,238,210);
+	background-color:rgb(79,208,110);
 }
 
 #heading2{
@@ -39,16 +43,26 @@ background-color:rgb(110,192,204);
 	min-height: 200px;
 }
 #heading3{
-	background-color: rgb(141,114,231)
+	background-color: rgb(141,114,231);
+	
 }
 
 #heading4{
-	background-color: rgb(150,73,231)
+	background-color: rgb(150,73,231);
+	
 }
 #heading5{
-	background-color: rgb(79,158,210)
+	background-color: rgb(79,158,210);
+	
 }
 #padded{
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+#bottom{
+	margin-bottom: 25px;
+}
+#bottom2{
+	margin-bottom: 15px;
 }
