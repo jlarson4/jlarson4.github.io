@@ -14,6 +14,13 @@
 	background-color:rgb(150,73,231);
 }
 
+.textbackground{
+	background-color: rgb(150,50,231);
+	color:rgb(200,200,200);
+	padding: 7px;
+}
+
+
 #education{
 	background-color:rgb(141,114,231);
 }
@@ -27,7 +34,7 @@
 }
 
 body{
-	background-color:rgb(79,208,110);
+	background-color:rgb(79,108,110);
 }
 
 #heading2{
@@ -39,8 +46,9 @@ background-color:rgb(110,192,204);
 }
 #Pub{
 	border-top: 5px solid black;
-	/*border-bottom: 2px solid black;*/
-	min-height: 200px;
+	
+	padding-left: 10px;
+	min-height: 225px;
 }
 #heading3{
 	background-color: rgb(141,114,231);
@@ -58,6 +66,23 @@ background-color:rgb(110,192,204);
 #padded{
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.paddedImage{
+	padding: 10px;
+}
+
+.borderedImage{
+	border: 10px inset lightblue;
+}
+
+#heightadjust{
+	max-height: 400px;
+}
+
+#heightadjust2{
+	max-height: 275px;
+	border: 10px inset purple;
 }
 
 #bottom{
