@@ -35,7 +35,7 @@ return 0;
 principle[0] = parseInt(principle);
 
 //ensures the principle is greater than 0
-if(principle[0]<0 || principle[0]==null){
+if(principle[0]<=0 || principle[0]==null){
 	$('#summary').append('<br><p class="p-warning"><em>Your Loan Amount is invalid, please try again</em></p><br>');
 return 0;
 }
@@ -99,6 +99,12 @@ if(startMonth > (years*12)){
 var monthlyInterest = annualInterest/1200;
 var powInt = Math.pow((monthlyInterest + 1), (years*(-12)));
 monthlyPayment[0] = (monthlyInterest / (1 - powInt))*principle;
+
+//if your interest rate
+if(monthlyInterest === 0){
+	monthlyInterest=0;
+	monthlyPayment[0]=principle/(years*12);
+}
 
 //sets up all the data in memory
 console.log("MN | MP | PtI | PtP | P");
