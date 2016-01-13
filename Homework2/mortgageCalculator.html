@@ -41,15 +41,15 @@
       </div>
     <div class="container">
       <div class = "row" id="pageBody">
-        <div class = "col-xs-8">
+        <div class = "col-sm-8">
           <form role="form">
             <div class="form-group">
               
-              <h4><label for="loanAmnt">Loan Amount: </label></h4>
+              <h4><label for="loanAmnt">Loan Amount <span class="text-muted">($):</span> </label></h4>
                  
                   <input type="number" class="form-control" id="loanAmnt" placeholder="Enter your loan amount"/><hr>
 
-              <h4><label for="interest"> Annual Interest Rate: </label></h4>
+              <h4><label for="interest"> Annual Interest Rate <span class="text-muted">(%):</span> </label></h4>
               <input type="number" class="form-control" id="interest" placeholder="Interest Rate"/>
              
               
@@ -79,7 +79,6 @@
 
             <div class="form-group">
               <label for="start">First: </label>
-              <div class="form-group">
               <select id="start" class="form-control">
 
               </select> 
@@ -94,17 +93,24 @@
 
           </form>
 
-          <button id="calculate" class="btn btn-info"> Calculate </button>
+          <button id="calculate" class="btn btn-info"> Calculate <span class="glyphicon glyphicon-check"></span></button>
+        </div>
+
+        <div class="col-sm-4">
+          <div id="cycler" class="pagination-centered">
+            <img src="../images/Homework2/house1.jpg" alt="house" />
+            <img src="../images/Homework2/house2.jpg" alt="house" /> 
+            <img src="../images/Homework2/house3.jpg" alt="house" /> 
+            <img src="../images/Homework2/house4.jpg" alt="house" /> 
+            <img src="../images/Homework2/house5.jpg" alt="house" /> 
+            <img class="active" src="../images/Homework2/house6.jpg" alt="house" />  
+          </div>
+
         </div>
       </div>
     </div>
   </fieldset>
-    
-
-        </div>
-      </div>
-    </div>
-
+  
     <script type="text/javascript" src="mcjs.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

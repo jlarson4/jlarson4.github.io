@@ -15,6 +15,21 @@ body{
 	background-color: #52bf90;
 }
 
-#year{
+.year{
 	background-color: #317256;
+}
+
+#cycler{
+	position:relative;
+
+}
+#cycler img{
+	position:absolute;z-index:1;
+	height:350;
+	width:350;
+	margin-top: 30px;
+	border:10px solid rgb(255,255,255);
+}
+#cycler img.active{
+	z-index:3;
 }

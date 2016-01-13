@@ -6,7 +6,7 @@ $(document).on("click", "#recalc #recalculate", function(){
 	mortgageInfo(); return false;
 });
 
-for(var i = 0; i <=360; i++){
+for(var i = 1; i <=360; i++){
 	$("#start").append('<option id="s'+i+'"> '+i+' </option>');
 	$("#end").append('<option id="e'+i+'"> '+i+' </option>');
 
@@ -128,8 +128,8 @@ var interestPaid = totalAmntPaid-principle[0];
 var ratio = totalAmntPaid/principle[0];
 
 	//creates a second button to recalculate at the top. 
-	$('#recalc').append('<button id="recalculate" class="btn btn-info"> Recalculate </button>');
-	$('#calculate').html('Recalculate');
+	$('#recalc').append('<button id="recalculate" class="btn btn-info"> Recalculate <span class="glyphicon glyphicon-refresh"></span> </button>');
+	$('#calculate').html('Recalculate <span class="glyphicon glyphicon-refresh"></span> ');
 	//show summary in div
 	$('#summary').append('<h4><strong> Summary</strong></h4>')
 	$('#summary').append(  '<table class="table table-hover" />' );
@@ -143,11 +143,11 @@ var ratio = totalAmntPaid/principle[0];
 	//show output in div
 	$('#output').append('<h3><strong>Monthly Schedule</strong></h3>')
 	$('#output').append(  '<table class="table-hover table-bordered table-condensed" id="infoTable"/>' );
-	$('#output table').append(  '<tr id="year"><th> Month Number </th><th> Monthly Payment </th><th>  Paid to Interest </th><th> Paid to Principle </th><th> Remaining Principle</th></tr>' );
+	$('#output table').append(  '<tr class="year"><th> Month Number </th><th> Monthly Payment </th><th>  Paid to Interest </th><th> Paid to Principle </th><th> Remaining Principle</th></tr>' );
 
 	for(var i=startMonth;i<=endMonth;i++){
 		if((i%12) === 1 ){
-    	$('#output table').append( '<tr id="year"><td></td><td></td><td class="text-center"><strong>Year '+((1+i/12)).toFixed(0) +'</strong></td><td></td><td></td></tr>' );
+    	$('#output table').append( '<tr class="year" id="yr'+ (i/12).toFixed(0) +'"><td class="text-center"><a href="#yr'+ ((i/12)-1).toFixed(0) +'"><span class="glyphicon glyphicon-chevron-up"></span></a></td><td></td><td class="text-center"><strong>Year '+((1+i/12)).toFixed(0) +'</strong></td><td></td><td class="text-center"><a href="#yr'+ ((i/12)+1).toFixed(0) +'"><span class="glyphicon glyphicon-chevron-down"></span></a></td></tr>' );
 
 		}
 
@@ -157,3 +157,17 @@ var ratio = totalAmntPaid/principle[0];
 
 }
 
+function cycleImages(){
+      var $active = $('#cycler .active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+      $next.css('z-index',2);//move the next image up the pile
+      $active.fadeOut(7000,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+          $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+
+$(document).ready(function(){
+// run every 6 seconds
+setInterval('cycleImages()', 6000);
+})
