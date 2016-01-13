@@ -24,7 +24,8 @@ body{
 
 }
 #cycler img{
-	position:absolute;z-index:1;
+	position:absolute;
+	z-index:1;
 	height:350;
 	width:350;
 	margin-top: 30px;
@@ -32,4 +33,8 @@ body{
 }
 #cycler img.active{
 	z-index:3;
+}
+
+#calculate, #recalculate{
+	margin: 10px;
 }
