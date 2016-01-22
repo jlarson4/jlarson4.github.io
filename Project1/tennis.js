@@ -208,6 +208,8 @@ $(document).ready(function() {
 					index--;
 					individualRefs[index].update({homeName: $('#h' + num + "s").val()});
 					individualRefs[index].update({awayName: $('#a' + num + "s").val()});
+
+					
 					disIndex=6;
 				}
 
@@ -226,7 +228,9 @@ $(document).ready(function() {
 	
 					$("#at").text(snapshot.child("away").val() + ": " + snapshot.child('awayWins').val());
 					$("#ht").text(snapshot.child("home").val() + ": " + snapshot.child('homeWins').val());
-				});			
+				});	
+
+
 			}
 
 			function whoWon(i, tag, ref){
@@ -344,31 +348,3 @@ $('#menu1').mouseover( function() {
 $('#menu1').mouseout( function() {
    $('#menu1').css("color", "black");
 });
-
-//scales text to screen
-/*var $displayZone = $('#displayZone'); //Cache this for performance
-
-            var setBodyScale = function() {
-                var scaleSource = $displayZone.width(),
-                    scaleFactor = 0.35,                     
-                    maxScale = 200,
-                    minScale = 100; //Tweak these values to taste
-
-                var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
-
-                if (fontSize > maxScale) fontSize = maxScale;
-                if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
-
-                $('#displayZone').css('font-size', fontSize + '%');
-                $('.disHeading').css('font-size', (fontSize + 25 ) + '%');
-                $('.SM').css('font-size', fontSize + '%');
-                $('.matchscore').css('font-size', fontSize + '%');
-                $('#matchscore').css('font-size', fontSize + '%');
-
-      }
-
-            $(window).resize(function(){
-                setBodyScale();
-            });*/
-
-

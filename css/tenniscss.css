@@ -4,21 +4,28 @@
 
 .score{
 	float: right;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 	
-	display: flex;
-	flex-direction: row;
 
 }
 
 .DM, .SM{
 	font-size: 150%;
-	padding: 15px;
+	padding-bottom: 15px;
+	border-top: solid 5px black;
+	display: flex;flex-direction:row;
+	justify-content:space-between;
 	
 
 }
+
+
 .players{
 	display: flex;
+	position: relative;
+	width:33%;
+	text-align:left;
+	
 }
 
 span{
