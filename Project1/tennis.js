@@ -1,6 +1,7 @@
  //this is for the fire base
  $('#displayZone').hide();
  $('#newMatch').hide();
+ $('#finalize').hide();
 $(document).ready(function() {
  
 
@@ -98,6 +99,7 @@ $(document).ready(function() {
 			newDisplay();
 			$('#displayZone').show();
 			$('#newMatch').show();
+			$("#finalize").show();
 			$('#menu1').hide();
 			$('#menu2').hide();
 			$('#addMatch').hide();
