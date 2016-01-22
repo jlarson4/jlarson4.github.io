@@ -15,6 +15,7 @@
 	border-top: solid 5px black;
 	display: flex;flex-direction:row;
 	justify-content:space-between;
+	flex-wrap: wrap;
 	
 
 }
@@ -23,18 +24,21 @@
 .players{
 	display: flex;
 	position: relative;
-	width:33%;
+	width:85%;
 	text-align:left;
+	flex-wrap: wrap;
 	
 }
 
 span{
 	margin-left: 3px;
-	margin-right: 3px;
+	margin-right: 3px;	
+
 }
 .dt{
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .matchscore{
@@ -106,5 +110,8 @@ body{
 	color: black;
 }
 
-
+.test{
+	display:flex;
+	flex-direction: row;
+}
 
