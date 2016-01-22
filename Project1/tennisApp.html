@@ -1,0 +1,821 @@
+<!DOCTYPE>	
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/tenniscss.css">
+
+	<title>Interactive Scorebook</title>
+	
+  </head>
+
+  <body>
+
+    <div id="pageHeader" class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 id="heading" class="text-center">Interactive Scorebook</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainPage" class="container">
+      <div class="row">
+        <div id="buttons" class="col-xs-4 col-xs-offset-4">
+          <h2><button  class="btn-lg btn-warning"  id="addMatch"><span>Add a new match<span class="glyphicon glyphicon-plus"></span></span></button></h2>
+
+          <h3> 
+                <div class="dropdown">
+                   <button id="menu1"class="btn-md btn-success dropdown-toggle" type="button" data-toggle="dropdown">View a completed match 
+                  <span class="glyphicon glyphicon-saved"></span></button>
+                   <ul id="matchDropdown" class="dropdown-menu">
+
+                   </ul>
+                </div>
+             </h3>
+
+             <h3>
+                <div class="dropdown">
+                   <button id="menu2" class="btn-md btn-success disabled" type="button" >View an individual record
+                   </button>
+                    
+                </div>
+             </h3>
+        </div>
+      </div>
+    </div>
+    <div id ="newMatch">
+
+    <div id="forms" class = "container">
+        <div class="row">
+          <div class="col-md-4">
+             <div class="form-group">
+                <label for="date"><h4> Date: </h4></label>
+                <input type="text" class="form-control" id="date" placeholder="Date"/>
+             </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-4">
+          <form role="form">
+            <div class="form-group">
+             <label for="homeTeam"><h4> Home: </h4></label>
+            <input type="text" class="form-control" id="homeTeam" placeholder="Team name"/>
+          </div>
+        </form>
+       
+      </div>
+
+      <div class="col-md-4">
+
+      </div>
+
+        <div class="col-md-4">
+          <form role="form">
+          <div class="form-group">
+            <label for="awayTeam"><h4>Away:</h4></label>
+             <input type="text" class="form-control" id="awayTeam" placeholder="Team name"/>
+           </div>
+         </form>
+          
+         </div>
+       </div>
+        <button  id="teamsDate" class="btn btn-success">Submit Teams</button>
+     </div>
+<!-- Singles -->
+    <div id="forms" class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="text-center"> Singles </h3><hr>
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h1s"><h4> 1<sup>st</sup> Singles:</h4></label>
+            <input type="text" class="form-control" id="h1s" placeholder="Home"/>
+          </div>
+
+          <div class="form-group">
+            <label for="a2s"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a1s" placeholder="Away"/>
+           </div>
+        </form>
+         </div>
+       </div>
+
+
+       <div class="row">
+        <div class="col-xs-12">
+         <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="s1s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="s1s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="s1s3" placeholder="Set 3"/>
+           </div>
+
+           <div class="form-group">
+            <label><h4>Winner:</h4></label>
+               <select class="form-control" id="s1w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+           
+          </form>
+          <button  id="bs1" class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+<!--2nd Singles-->
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h2s"><h4> 2<sup>nd</sup> Singles:</h4></label>
+            <input type="text" class="form-control" id="h2s" placeholder="Home"/>
+          </div>
+
+          <div class="form-group">
+            <label for="a2s"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a2s" placeholder="Away"/>
+           </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="s2s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="s2s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="s2s3" placeholder="Set 3"/>
+           </div>
+
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="s2w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+           <button  id="bs2" class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+<!-- 3rd Singles-->
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h3s"><h4> 3<sup>rd</sup> Singles:</h4></label>
+            <input type="text" class="form-control" id="h3s" placeholder="Home"/>
+          </div>
+
+          <div class="form-group">
+            <label for="a3s"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a3s" placeholder="Away"/>
+           </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="s3s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="s3s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="s3s3" placeholder="Set 3"/>
+           </div>
+
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="s3w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+           <button  id="bs3"  class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+
+<!-- 4th Singles-->
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h4s"><h4> 4<sup>th</sup> Singles:</h4></label>
+            <input type="text" class="form-control" id="h4s" placeholder="Home"/>
+          </div>
+
+          <div class="form-group">
+            <label for="a4s"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a4s" placeholder="Away"/>
+           </div>
+          </form>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="s4s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="s4s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="s4s3" placeholder="Set 3"/>
+           </div>
+
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="s4w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+            <button  id="bs4"  class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+<!-- 5th Singles -->
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h5s"><h4> 5<sup>th</sup> Singles:</h4></label>
+            <input type="text" class="form-control" id="h5s" placeholder="Home"/>
+          </div>
+
+          <div class="form-group">
+            <label for="a5s"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a5s" placeholder="Away"/>
+           </div>
+          </form>
+        </div>
+      </div>
+
+
+ <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="s5s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="s5s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="s5s3" placeholder="Set 3"/>
+           </div>
+
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="s5w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+           <button   id="bs5" class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+<!-- 6th singles-->
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h6s"><h4> 6<sup>th</sup> Singles:</h4></label>
+            <input type="text" class="form-control" id="h6s" placeholder="Home"/>
+          </div>
+
+          <div class="form-group">
+            <label for="a6s"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a6s" placeholder="Away"/>
+           </div>
+          </form>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="s6s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="s6s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="s6s3" placeholder="Set 3"/>
+           </div>
+
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="s6w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+          <button  id="bs6"  class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+<!-- Doubles -->
+       <div class="row">
+        <div class="col-xs-12">
+          <h3 class="text-center"> Doubles </h3><hr>
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h1da"><h4> 1<sup>st</sup> Doubles:</h4></label>
+            <input type="text" class="form-control" id="h1da" placeholder="Home"/>
+            </div>
+
+          <div class="form-group">
+             <label for="h1db"><h4 id="and">&</h4></label>
+            <input type="text" class="form-control" id="h1db" placeholder="Home"/>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <form role="form" class="form-inline">
+          <div class="form-group">
+            <label for="a1da"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a1da" placeholder="Away"/>
+          </div>
+
+          <div class="form-group">
+             <label for="a1db"><h4 id="and">&</h4></label>
+             <input type="text" class="form-control" id="a1db" placeholder="Away"/>
+           </div>
+
+          </form>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="d1s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="d1s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="d1s3" placeholder="Set 3"/>
+           </div>
+
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="d1w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+           <button   id="bd1" class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+<!-- 2nd Doubles -->
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h2da"><h4> 2<sup>nd</sup> Doubles:</h4></label>
+            <input type="text" class="form-control" id="h2da" placeholder="Home"/>
+            </div>
+
+          <div class="form-group">
+             <label for="h2db"><h4 id="and">&</h4></label>
+            <input type="text" class="form-control" id="h2db" placeholder="Home"/>
+          </div>
+          </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <form role="form" class="form-inline">
+          <div class="form-group">
+            <label for="a2da"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a2da" placeholder="Away"/>
+          </div>
+
+          <div class="form-group">
+             <label for="a2db"><h4 id="and">&</h4></label>
+             <input type="text" class="form-control" id="a2db" placeholder="Away"/>
+           </div>
+
+          </form>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="d2s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="d2s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="d2s3" placeholder="Set 3"/>
+           </div>
+
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="d2w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+          <button   id="bd2" class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+
+<!-- 3rd Doubles -->
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+             <label for="h3da"><h4> 3<sup>rd</sup> Doubles:</h4></label>
+            <input type="text" class="form-control" id="h3da" placeholder="Home"/>
+            </div>
+
+          <div class="form-group">
+             <label for="h3db"><h4 id="and">&</h4></label>
+            <input type="text" class="form-control" id="h3db" placeholder="Home"/>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <form role="form" class="form-inline">
+          <div class="form-group">
+            <label for="a3da"><h4>vs</h4></label>
+             <input type="text" class="form-control" id="a3da" placeholder="Away"/>
+          </div>
+
+          <div class="form-group">
+             <label for="a3db"><h4 id="and">&</h4></label>
+             <input type="text" class="form-control" id="a3db" placeholder="Away"/>
+           </div>
+
+          </form>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+            <label><h4>Score:</h4></label>
+             <input type="text" class="form-control" id="d3s1" placeholder="Set 1"/>
+           </div>
+
+           <div class="form-group">
+             <input type="text" class="form-control" id="d3s2" placeholder="Set 2"/>
+           </div>
+
+            <div class="form-group">
+             <input type="text" class="form-control" id="d3s3" placeholder="Set 3"/>
+           </div>
+              
+            <div class="form-group">
+            <label><h4>Winner:</h4></label>
+                <select class="form-control" id="d3w">
+                 <option>Home</option>
+                 <option>Away</option>
+               </select>
+           </div>
+
+          </form>
+            <button  id="bd3"  class="btn btn-success">Submit</button>
+          <hr>
+        </div>
+      </div>
+     
+          <button   id="fullMatch" class="btn btn-success btn-block">Submit All</button><hr>
+    </div>
+     <h4 id="preview">Preview:</h5>
+  </div>
+
+    </div>
+   <!-- preview display -->
+    <div id="displayZone">
+     
+      
+        <div class="row">
+          <h2 class="col-xs-12 text-center disHeading">
+           <strong> Match of: <span id="day">_________</span></strong>
+          </h2>
+       </div>
+
+       <!-- team info -->
+         <div class="row">
+          <div id="teamDis"class="col-xs-12 text-center">
+           <strong><u id="homeT">____________</u>  v.  <u id="awayT">____________</u></strong>
+          </div>
+       <div id="teams" >
+
+        <h2 class="disHeading"><strong>Singles</strong></h2>
+        <div class="SM" id="s1">
+          <span class="heading">1<sup>st</sup> Singles:</span>
+          <span class="players">
+             <span id="s1p1">_________</span>
+             <span>v.</span>
+             <span id="s1p2">_________</span>
+         </span>
+          <span class="score">
+            <span>
+            <span class>Score:</span>
+            
+            <span id="s1set1">___</span>
+            <span id="s1set2">___</span>
+            <span id="s1set3">___</span>
+            <span>Winner:</span>
+            <span id="s1won">____</span>
+          </span>
+         </span>
+        </div>
+        <div class="SM" id="s2"><span class="heading">2<sup>nd</sup> Singles:</span>
+          <span class="players">
+            <span id="s2p1">_________</span>
+            <span> v. </span>
+            <span id="s2p2">_________</span>
+            </span>
+            <span class="score">
+              <span>
+              <span>Score:</span>
+               <span id="s2set1">___</span>
+              <span id="s2set2">___</span>
+              <span id="s2set3">___</span>
+              <span>Winner:</span>
+              <span id="s2won">____</span>
+            </span>
+            </span>
+          </div>
+        <div class="SM" id="s3"><span class="heading">3<sup>rd</sup> Singles:</span>
+          <span class="players">
+            <span id="s3p1">_________</span>
+            <span>v.</span>
+            <span id="s3p2">_________</span>
+            </span>
+            <span class="score">
+              <span>
+              <span>Score:</span>
+              <span id="s3set1">___</span>
+              <span id="s3set2">___</span>
+              <span id="s3set3">___</span>
+              <span>Winner:</span>
+              <span id="s3won">____</span>
+            </span>
+            </span>
+          </div>
+        <div class="SM" id="s4"><span class="heading">4<sup>th</sup> Singles:</span>
+          <span class="players">
+            <span id="s4p1">_________</span>
+            <span>v.</span>
+            <span id="s4p2">_________</span>
+          </span>
+            <span class="score">
+              <span>
+              <span>Score:</span>
+              <span id="s4set1">___</span>
+              <span id="s4set2">___</span>
+              <span id="s4set3">___</span>
+              <span>Winner:</span>
+              <span id="s4won">____</span>
+            </span>
+            </span>
+          </div>
+        <div class="SM" id="s5"><span class="heading">5<sup>th</sup> Singles:</span>
+          <span class="players">
+            <span id="s5p1">_________</span>
+            <span>v.</span>
+            <span id="s5p2">_________</span>
+          </span>
+            <span class="score">
+               <span>
+              <span>Score:</span>
+             
+              <span id="s5set1">___</span>
+              <span id="s5set2">___</span>
+              <span id="s5set3">___</span>
+              <span>Winner:</span>
+              <span id="s5won">____</span>
+            </span>
+            </span>
+          </div>
+        <div class="SM" id="s6"><span class="heading">6<sup>th</sup> Singles:</span>
+          <span class="players">
+            <span id="s6p1">_________</span>
+            <span>v.</span>
+            <span id="s6p2">_________</span>
+            </span>
+            <span class="score">
+              <span>
+            <span>Score:</span>
+              <span id="s6set1">___</span>
+              <span id="s6set2">___</span>
+              <span id="s6set3">___</span>
+              <span>Winner:</span>
+              <span id="s6won">____</span>
+            </span>
+            </span>
+         </div>
+          <h2 class="disHeading"><strong>Doubles</strong></h2>
+         <div class="DM" id="d1"><span class="heading"> 1<sup>st</sup> Doubles:</span><span class="players">
+            <span class="dt">
+             <span id="d1hp1">_________</span>
+             <span id="d1hp2">_________</span>
+           </span>
+             <span>v.</span>
+             <span class="dt">
+             <span id="d1ap1">_________</span>
+             <span id="d1ap2">_________</span>
+           </span>
+              </span>
+               
+             <span class="score"><span><span>Score:</span>
+             
+               <span id="d1set1">___</span>
+               <span id="d1set2">___</span>
+               <span id="d1set3">___</span>
+               <span>Winner:</span>
+               <span id="d1won">____</span>
+             </span>
+             </span>
+           </div>
+         <div class="DM" id="d2"><span class="heading">2<sup>nd</sup> Doubles:</span><span class="players">
+            <span class="dt">
+             <span id="d2hp1">_________</span>
+             <span id="d2hp2">_________</span>
+           </span>
+             <span>v.</span>
+             <span class="dt">
+             <span id="d2ap1">_________</span>
+             <span id="d2ap2">_________</span>
+           </span>
+              </span>
+              
+             <span class="score">
+              <span>
+                <span>Score:</span>
+            
+               <span id="d2set1">___</span>
+               <span id="d2set2">___</span>
+               <span id="d2set3">___</span>
+            
+               <span>Winner:</span>
+               <span id="d2won">____</span>
+             </span>
+             </span>
+          </div>
+         <div class="DM" id="d3"><span class="heading">3<sup>rd</sup> Doubles:</span><span class="players">
+          <span class="dt">
+             <span id="d3hp1">_________</span>
+             <span id="d3hp2">_________</span>
+          </span>
+          <span>v.</span>
+          <span class="dt">
+             <span id="d3ap1">_________</span>
+             <span id="d3ap2">_________</span>
+           </span>
+              </span>
+             
+             <span class="score">
+               <span>
+              <span>Score:</span>
+              
+               <span id="d3set1">___</span>
+               <span id="d3set2">___</span>
+               <span id="d3set3">___</span>
+               <span>Winner:</span>
+               <span id="d3won">____</span>
+             </span>
+             </span>
+          </div>
+
+          
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="matchScore">
+            <strong>Final:</strong>
+              <span id="ht">Home:
+              <span id="hsc">____________</span>
+            </span>
+               <span id="at">Away:
+               <span id="asc">____________</span>
+            </span>
+          </div>
+        </div>
+           <button   id="finalize" class="btn btn-success btn-block">Finalize Results</button><hr>
+    </div>
+  </div> 
+
+
+ 
+
+ <!-- firebase library -->
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+
+    <script src="tennis.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  </body>
+  
+</html> 

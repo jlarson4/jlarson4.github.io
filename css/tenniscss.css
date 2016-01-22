@@ -1,0 +1,103 @@
+#heading{
+	margin-bottom: 50px;
+}
+
+.score{
+	float: right;
+	padding-bottom: 10px;
+	
+	display: flex;
+	flex-direction: row;
+
+}
+
+.DM, .SM{
+	font-size: 150%;
+	padding: 5px;
+	
+
+}
+.players{
+	display: flex;
+}
+
+span{
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.dt{
+	display: flex;
+	flex-direction: column;
+}
+
+.matchscore{
+	display: flex;
+	flex-direction: column;
+	font-size: 150%;
+	margin-top: 50px;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid black;
+}
+
+#displayZone{
+	margin:10px;
+	padding: 15px;
+	background-color: #C0C0C0;
+
+
+}
+
+#preview{
+	margin:10px;
+	padding: 15px;	
+	background-color: #C6ED2C
+}
+
+body{
+	background-color: #dddddd
+}
+
+#forms{
+	background-color: rgb(200,200,160);
+}
+
+
+
+#pageHeader{
+	background-color: #C6ED2C;
+}
+
+#return{
+	margin-top: 10px;
+}
+
+#mainPage{
+	background-color: rgb(200,200,160);
+	padding-bottom: 50px;
+}
+
+
+
+
+/*css for the tennis app main page*/
+#buttons{
+	text-align: center;
+}
+
+#addMatch{
+	font-size: 100%;
+}
+
+#teamDis{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#addMatch, #menu1, #menu2{
+	color: black;
+}
+
+
+
