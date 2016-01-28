@@ -1,0 +1,73 @@
+body{
+	background-color: lightblue;
+	margin:10px;
+}
+
+
+
+#pageTopper, .cuddleForms {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, .4);
+}
+
+.heading{
+	font-size: 200%;
+	margin-top: 10px;
+}
+
+#cuddleFinder{
+	color:black;
+}
+
+#HiW{
+	font-size: 150%;
+}
+
+#img{
+	float: left;
+	width:1012px;
+	height:850px;
+	padding: 20px;
+
+
+}
+#responsedata{
+	font-size: 200%;
+	padding:20px;
+	float: left;
+	
+};
+
+#websiteTopper{
+	margin-top: 90px;
+	margin-bottom: 5px;
+
+}
+
+#websiteTopper, #display {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, .6);
+	
+	margin: 5px
+	
+}
+
+#display{
+	background-color: rgba(0,94,255,.6)
+}
+
+#submitted{
+	background-color: rgba(255, 255, 255,.6);
+	border-radius:20px;
+	padding:20px;
+}
+
+#bgrnd{
+background-color: #0090a8;
+padding-bottom: 10px;
+border-radius: 20px;
+margin-top: 20px;
+margin-right: 20px;
+}
+	
+

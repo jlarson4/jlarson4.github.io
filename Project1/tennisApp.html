@@ -27,8 +27,24 @@
   </head>
 
   <body>
-
-    <div id="pageHeader" class="container">
+    
+    <nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+  		  <div class="navbar-header">
+  		    <a class="navbar-brand" href="#">Interactive Scorebook</a>
+  		  </div>
+  		  <ul class="nav navbar-nav">
+  		    <li class="active"><a href="#" id="addMatch">Add a new match<span class="glyphicon glyphicon-plus"></span></a></li>
+  		    <li class="dropdown">
+  		      <a class="dropdown-toggle" data-toggle="dropdown" href="#">View a completed match 
+  		      <span class="caret"></span></a>
+  		      <ul class="dropdown-menu" id="matchDropdown">
+  		      </ul>
+  		    </li>
+  		  </ul>
+  		</div>
+	</nav>
+    <!--<div class="container">
       <div class="row">
         <div class="col-xs-12">
           <h1 id="heading" class="text-center">Interactive Scorebook</h1>
@@ -51,13 +67,13 @@
                 </div>
              </h3>
 
-             <h3>
+             <!--<h3>
                 <div class="dropdown">
                    <button id="menu2" class="btn-md btn-success disabled" type="button" >View an individual record
                    </button>
                     
                 </div>
-             </h3>
+             </h3>-->
         </div>
       </div>
     </div>
@@ -68,7 +84,7 @@
           <div class="col-md-4">
              <div class="form-group">
                 <label for="date"><h4> Date: </h4></label>
-                <input type="text" class="form-control" id="date" placeholder="Date"/>
+                <input type="date" class="form-control" id="date" placeholder="Date"/>
              </div>
           </div>
         </div>

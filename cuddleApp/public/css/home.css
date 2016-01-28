@@ -1,0 +1,31 @@
+body{
+	background-image:url("../images/cuddlesBackground.jpg");
+	 background-size:cover
+}
+
+
+
+#websiteTopper, .info {
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, .6);
+	
+	margin: 5px
+	
+}
+
+#websiteTopper{
+	margin-top: 60px;
+	margin-bottom: 5px;
+
+}
+
+#buttons{
+	padding-bottom: 20px;
+}
+
+#us{
+	float:right;
+	padding: 10px;
+	max-width: 455px;
+	max-height: 460px;
+}

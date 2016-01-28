@@ -1,0 +1,225 @@
+<!DOCTYPE>	
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/signup.css">
+
+	<title>Apply!</title>
+	
+  </head>
+ 
+  <body>
+
+<!-- website topper -->
+
+
+
+
+<!-- navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="cuddles.html"><span class="glyphicon glyphicon-cloud"></span> Snuggler <span class="glyphicon glyphicon-cloud"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="apply.html">Apply!</a></li>
+        <li><a href="cuddlers.html">Meet the Cuddlers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us <span class="glyphicon glyphicon-envelope"></span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signup.html">Join The Community <span class="glyphicon glyphicon-unchecked"></span></a></li>
+        <li><a href="viewOptions.html">View Cuddles <span class="glyphicon glyphicon-home"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container cuddleForms" id="applyForCuddles">
+
+  <div class="row">
+    <div class="col-xs-12 text-center">
+  <h2  id="pageTopper"> Apply For a Cuddle Buddy</h2>
+    </div>
+  </div>
+
+  <p><strong class="heading"> How it Works: </strong><span id="HiW"> Looking for a quick cuddle, but not sure you want to take the leap and join the community? Fill out our cuddle-only survey! It will match the preferences you're looking for in a cuddle with our professional cuddlers. Once submitted, we will recommend the member of our highly trained cuddling staff who most fulfills your desires</span></p>
+
+  <div class="row cuddleForms">
+    <div class="col-xs-12 col-sm-8">
+   <form > <!--role="form" method="post" action="/apply" -->
+
+<!-- gender -->
+      <p><strong>Gender:</strong></p>
+      <div class="radio">
+        <label><input type="radio" name="gender" value='0'>Male</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="gender" value='1'>Female</label>
+      </div>
+       <div class="radio">
+        <label><input type="radio" name="gender" value='2'>Either</label>
+      </div>
+
+<!-- Age -->
+     <div class="form-group">
+       <label for="age">Age:</label>
+       <input type="number" class="form-control" id="age" name="age" min="18">
+     </div>
+
+<!-- Weight -->
+     <div class="form-group">
+       <label for="wght">Weight (lbs):</label>
+       <input type="number" class="form-control" id="wght" name="weight" min='75'>
+     </div>
+
+<!-- Height -->
+      <label for="hghtFT">Height</label>
+      <div class="form-group">
+       
+       <label for="hghtFT">Feet:</label>
+       <input type="number" class="form-control" id="hghtFT" name="heightFT" max='9' min='0'>
+     </div>
+
+     <div class="form-group">
+         <label for="hghtIN">Inches:</label>
+         <input type="number" class="form-control" id="hghtIN" name="heightIN"min='0' max='11'>
+       </div>
+
+      <!-- Fingers-->
+       <div class="form-group">
+         <label for="hght"> Number of Fingers:</label>
+         <input type="number" class="form-control" id="fingers" min="0" max="12" name="fingers">
+       </div>
+
+      <!-- Hair color -->
+      <p><strong>Hair Color:</strong></p>
+      <div class="radio">
+        <label><input type="radio" name="hairColor" value="1">Brown - light</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="hairColor" value="2">Brown - dark</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="hairColor" value="3">Blonde - platinum</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="hairColor" value="4">Blonde - dirty</label>
+      </div>
+        <div class="radio">
+        <label><input type="radio" name="hairColor" value="5">Strawberry Blonde</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="hairColor" value="6">Black</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="hairColor" value="7">Ginger</label>
+      </div>
+       <div class="radio">
+        <label><input type="radio" name="hairColor" value="8">Dyed Something Ridiculous</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="hairColor" value="9">No Preference</label>
+      </div>
+
+       <!-- Music Taste -->
+      <p><strong>Music Preference:</strong></p>
+      <div class="radio">
+        <label><input type="radio" name="music" value="1">Pop</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="music" value="2">Rock</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="music" value="3">Country</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="music" value="4">Metal</label>
+      </div>
+        <div class="radio">
+        <label><input type="radio" name="music" value="5">Alternative/Indie</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="music" value="6">Electronic</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="music" value="7">Smooth Jazz</label>
+      </div>
+       <div class="radio">
+        <label><input type="radio" name="music" value="8">Rap/Hip Hop</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="music" value="9">No Preference</label>
+      </div>
+  
+
+      <p id="errors"></p>
+    
+    <button  type="submit" class="btn btn-default" id="cuddleFinder" >Submit</button>
+   </form>
+ </div>
+ </div>
+</div>
+
+<div class="container" style="max-height:100px;">
+
+  <div class="row" style="margin-bottom:40px">
+  </div>
+   <div class="row">
+    <div id="websiteTopper" class="col-xs-12 text-center">
+  <h2> <span class="glyphicon glyphicon-heart"></span> Snuggler <span class="glyphicon glyphicon-heart"></span></h2>
+    </div>
+  </div>
+  <div class="row" id="display">
+   
+    <div class="col-sm-5" id="bgrnd">
+      <span id="responsedata"></span>
+      <span id="bio"></span>
+    </div>
+
+     <div class="col-sm-6">
+      <span id="img"></span>
+    </div>
+
+  </div>
+</div>
+    <!-- firebase library -->
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+
+   <script src="../js/apply.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  </body>
+  
+</html> 

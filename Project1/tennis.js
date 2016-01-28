@@ -6,12 +6,15 @@ $(document).ready(function() {
  
 
 	var myFireBase = new Firebase("https://jl-scorebook.firebaseio.com/");
+	
+
 	var dates = [];
 	var sKeys = ['homeName', 'awayName', 'set1', 'set2', 'set3', 'winner'];
 	var dKeys = ['homeName1', 'homeName2', 'awayName1', 'awayName2', 'set1', 'set2', 'set3', 'winner'];
 	var mydiv = [];
 	$('#teams').find("div[id]").each(function(){ mydiv.push(this); });
 	matchdd();
+
 
 	function matchdd(){
 
@@ -333,7 +336,7 @@ $(document).ready(function() {
 
 
 
-$('#addMatch').mouseover( function() {
+/*$('#addMatch').mouseover( function() {
    $('#addMatch').css("color", "red");
 });
 
@@ -347,4 +350,4 @@ $('#menu1').mouseover( function() {
 
 $('#menu1').mouseout( function() {
    $('#menu1').css("color", "black");
-});
+});*/

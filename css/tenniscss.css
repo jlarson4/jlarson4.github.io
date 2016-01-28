@@ -57,7 +57,6 @@ span{
 	padding: 15px;
 	background-color: #C0C0C0;
 
-
 }
 
 #preview{
@@ -67,7 +66,10 @@ span{
 }
 
 body{
-	background-color: #dddddd
+	background-image: url ("courtBackground.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: white;
 }
 
 #forms{
@@ -76,9 +78,9 @@ body{
 
 
 
-#pageHeader{
+/*#pageHeader{
 	background-color: #C6ED2C;
-}
+}*/
 
 #return{
 	margin-top: 10px;
@@ -93,22 +95,14 @@ body{
 
 
 /*css for the tennis app main page*/
-#buttons{
-	text-align: center;
-}
 
-#addMatch{
-	font-size: 100%;
-}
+
 
 #teamDis{
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
 
-#addMatch, #menu1, #menu2{
-	color: black;
-}
 
 .test{
 	display:flex;

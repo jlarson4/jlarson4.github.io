@@ -1,0 +1,31 @@
+body{
+	background-color: lightblue;
+	margin:10px;
+}
+#info{
+	font-size: 150%;
+	padding-bottom: 15px;
+}
+.bgrnd{
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, .4);
+}
+
+#websiteTopper{
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, .6);
+	
+	margin: 5px;
+	margin-top: 60px;
+	margin-bottom: 5px;
+}
+#table, #th{
+	background-color: rgba(0, 144, 168, .6);
+}
+#table{
+	width: 100%
+}
+#joke{
+	max-width:100%;
+	max-height:100%;
+}
