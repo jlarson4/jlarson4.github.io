@@ -1,0 +1,43 @@
+#mainHeading{
+	text-align: left;
+	background-color: rgba(0,0,0,.6);
+	color:lightblue;
+
+	font-family: Georgia, serif;
+	margin-bottom: 15%;
+}
+
+body{
+/*background-color: lightgreen;*/
+background-image: url('../images/tennisnet.jpg');
+background-size: cover;
+}
+
+#signin{
+	background-color: rgba(0,0,0,.6);
+	font-family: Georgia, serif;
+	color:lightblue;
+	border-radius:10px;
+	padding-bottom: 10px;
+}
+
+#signup{
+	float:right;
+}
+
+
+	#noAccount{
+		position: absolute;
+		bottom: 10px;
+		right: 112px;
+	}
+
+
+
+#signin{
+	background-color: rgba(0,0,0,.6);
+	font-family: Georgia, serif;
+	color:lightblue;
+	border-radius:10px;
+	padding-bottom: 10px;
+}

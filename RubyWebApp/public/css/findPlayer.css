@@ -1,0 +1,29 @@
+#websiteTopper{
+	background-color: rgba(0,0,0,.4);
+	border-style:none;
+	border-radius: 10px;
+	margin-top: 15px;
+}
+
+#emailSubmit{
+	background-color: rgba(255,255,255,.6);
+	border-style:none;
+	border-radius: 10px;
+	margin-top: 15px;
+}
+
+body{
+	background-color: lightblue;
+}
+
+#th{
+	background-color: #8bf256;
+}
+
+.tr{
+	background-color: #aaea8a;
+	
+}
+#table{
+	display: none;
+}
